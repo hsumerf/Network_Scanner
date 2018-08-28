@@ -16,9 +16,11 @@ def scan(ip):
     #answered.summary()
     #print(answered_list.show())
     for element in answered_list:
+        #it will show going packet
         print(element[0].show())
+        #it will show receiving packet
+        print(element[1].show())
     #     #print(element)
     #     print("------------------")
 
 scan("192.168.0.1/24")
-

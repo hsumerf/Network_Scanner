@@ -1,3 +1,4 @@
+#It will print all ip and mac adresses of same network
 #!usr/bin/env python
 
 import scapy.all as scapy
@@ -14,6 +15,7 @@ def scan(ip):
     for element in answered_list:
         client_dict = {"ip":element[1].psrc,"MAC":element[1].hwsrc}
         clients_list.append(client_dict)
+        #print(element[1].psrc+"\t\t" + element[1].hwsrc)
     print(clients_list)
 
 # usr ifcongig to get to know MAC address of your PC network card
