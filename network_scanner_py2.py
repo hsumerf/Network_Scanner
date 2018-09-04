@@ -30,7 +30,7 @@ def print_result(results_list):
         for client in results_list:
             print(client["ip"]+"\t\t" + client["MAC"])
 
-# usr ifcongig to get to know MAC address of your PC network card
+# use ifcongig to get to know MAC address of your PC network card
 options = get_arguments()
 scan_result = scan(options.target)
 print_result(scan_result)
